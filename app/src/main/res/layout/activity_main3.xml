@@ -8,15 +8,22 @@
     android:gravity="center|center_vertical"
     android:orientation="vertical"
     android:paddingEnd="22dp"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity3">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingBottom="30dp"
-        android:text="@string/add_new_movie"
+        android:text="@string/edit_movie"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/tvMovieId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/movie_id"
         android:textColor="#FFFFFF" />
 
     <EditText
@@ -26,7 +33,7 @@
         android:drawableStart="@drawable/movie"
         android:drawablePadding="20dp"
         android:ems="10"
-        android:hint="@string/movie_title2"
+        android:hint="@string/movie_title"
         android:inputType="text"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
@@ -39,7 +46,7 @@
         android:drawableStart="@drawable/genres"
         android:drawablePadding="20dp"
         android:ems="10"
-        android:hint="@string/genre3"
+        android:hint="@string/genre2"
         android:inputType="text"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
@@ -52,7 +59,7 @@
         android:drawableStart="@drawable/year"
         android:drawablePadding="20dp"
         android:ems="10"
-        android:hint="@string/year3"
+        android:hint="@string/year2"
         android:inputType="number"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
@@ -91,13 +98,20 @@
             android:id="@+id/btnUpdate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/insert" />
+            android:text="@string/update" />
 
         <Button
             android:id="@+id/btnDelete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/show_list" />
+            android:text="@string/delete" />
+
     </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel" />
 
 </LinearLayout>
