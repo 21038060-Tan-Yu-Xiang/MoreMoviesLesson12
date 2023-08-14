@@ -17,6 +17,7 @@
     <string name="year3">Year</string>
     <string name="insert">INSERT</string>
     <string name="show_list">SHOW LIST</string>
-    <string name="movie_rating">Movie Rating: </string>
+    <string name="rating">Rating: </string>
+    <string name="movie_rating">Showing Movies with Rating: </string>
     <string name="no_movies">No movies for this rating.</string>
 </resources>
