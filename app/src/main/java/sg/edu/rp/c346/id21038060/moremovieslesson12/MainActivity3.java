@@ -50,7 +50,7 @@ public class MainActivity3 extends AppCompatActivity {
         Intent i = getIntent();
         data = (Movie) i.getSerializableExtra("data");
 
-        tvMovieId.setText("Movie ID: "+String.valueOf(data.getId()));
+        tvMovieId.setText("Movie ID: "+ data.getId());
         etTitle.setText(data.getTitle());
         etGenre.setText(data.getGenre());
         etYear.setText(String.valueOf(data.getYear()));
@@ -102,6 +102,8 @@ public class MainActivity3 extends AppCompatActivity {
                             db.updateMovie(data);
                             db.close();
                             finish();
+
+                            Toast.makeText(MainActivity3.this, "Movie info updated.", Toast.LENGTH_SHORT).show();
                         }
                     });
 
@@ -130,6 +132,8 @@ public class MainActivity3 extends AppCompatActivity {
                     public void onClick(DialogInterface dialogInterface, int i) {
                         db.deleteMovie(data.getId());
                         finish();
+
+                        Toast.makeText(MainActivity3.this, "Movie Deleted: "+etTitle.getText().toString(), Toast.LENGTH_SHORT).show();
                     }
                 });
 
